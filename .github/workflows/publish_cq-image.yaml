@@ -20,5 +20,5 @@ jobs:
     uses: ASFOpenSARlab/osl-utils/.github/workflows/reusable-docker-build.yaml@v0.0.6
     with:
       image-name: "osl-cq-image"
-      context: "cq-image"
-      dockerfile: "cq-image/Dockerfile"
+      context: "."
+      dockerfile: "Dockerfile"
