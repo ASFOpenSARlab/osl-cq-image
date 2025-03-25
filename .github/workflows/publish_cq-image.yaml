@@ -1,6 +1,6 @@
 ---
 name: Publish Code-Quality Image
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   # Manually trigger for dev:
   workflow_dispatch: {}
   # Only auto-run for test and prod:
