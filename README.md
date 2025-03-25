@@ -6,7 +6,7 @@ and by the reusable code quality GitHub Actions workflows.
 ## Local Usage
 
 ```
-$ docker run -v $(pwd):/code ghcr.io/asfopensarlab/osl-cq-image:v0.0.7 make help
+$ docker run -v $(pwd):/code ghcr.io/asfopensarlab/osl-cq-image:main make help
 ```
 
 will output the following message:
@@ -46,7 +46,7 @@ jobs:
   linting:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/asfopensarlab/osl-cq-image:v0.0.7
+      image: ghcr.io/asfopensarlab/osl-cq-image:main
       volumes:
         - ${{ github.workspace }}:/code
     steps:
